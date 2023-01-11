@@ -1,6 +1,6 @@
 
 <p align="center">
-Projeto de um blog feito seguindo os passas de um curso da Rocketseat. <br/>
+Projeto de um blog feito seguindo os passos de um curso da Rocketseat. <br/>
 
 
 <p align="center">
