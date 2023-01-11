@@ -1,7 +1,6 @@
-<h1 align="center"> DevLinks </h1>
 
 <p align="center">
-Projeto de um blog feito a partir do curso da Rocketseat. <br/>
+Projeto de um blog feito seguindo os passas de um curso da Rocketseat. <br/>
 
 
 <p align="center">
@@ -11,6 +10,14 @@ Projeto de um blog feito a partir do curso da Rocketseat. <br/>
 <p align="center">
   <img alt="Projeto Blog Logados na História" src=".github/img readme.jpg" width="100%">
 </p>
+<br>
+<p align="center">
+  <img alt="Projeto em modo dark" src=".github/img readme2.jpg" width="100%">
+</p>
+<br>
+<p align="center">
+  <img alt="Segundo Index (página-2)" src=".github/img readme3.jpg" width="100%">
+</p>   
 
 ## 🚀 Tecnologias
 
