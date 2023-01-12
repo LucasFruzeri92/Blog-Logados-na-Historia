@@ -29,8 +29,7 @@
     */
   
     /*background: image  repeat position/size */
-    background: var(--bg-url) no-repeat top center/cover;
-    background-size: 100%;
+    background: var(--bg-url) no-repeat top;
     height: 100%;
     width: 100%;
   }
