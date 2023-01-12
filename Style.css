@@ -6,7 +6,7 @@
   
   :root {
     --text-color: black;
-    --bg-url: url(./assets/texture.jpg);
+    --bg-url: url(./assets/texture\.png);
     --stroke-color: black;
   
     --switch-bg-url: url(./assets/Sun.svg);
@@ -14,7 +14,7 @@
   
   .dark {
     --text-color: rgb(255, 255, 255);
-    --bg-url: url(./assets/texturedark.jpg);
+    --bg-url: url(./assets/textureD\.png);
     --stroke-color: white;
   
     --switch-bg-url: url(./assets/MoonStars.svg);
@@ -30,7 +30,9 @@
   
     /*background: image  repeat position/size */
     background: var(--bg-url) no-repeat top center/cover;
-    background-size: 100%;
+    
+    height: 100vh;
+
   }
   
   body * {
