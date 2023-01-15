@@ -32,6 +32,8 @@
     background: var(--bg-url) no-repeat top;
     height: 100%;
     width: 100%;
+    min-width: 850px;
+    min-height: 355px;
     
   }
   
