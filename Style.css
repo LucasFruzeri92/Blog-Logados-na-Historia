@@ -6,15 +6,15 @@
   
   :root {
     --text-color: black;
-    --bg-url: url(./assets/texture\.png);
+    --bg-url: url(./assets/LibraryL.png);
     --stroke-color: black;
   
     --switch-bg-url: url(./assets/Sun.svg);
   }
   
   .dark {
-    --text-color: rgb(255, 255, 255);
-    --bg-url: url(./assets/textureD\.png);
+    --text-color: white;
+    --bg-url: url(./assets/LibraryD.png);
     --stroke-color: white;
   
     --switch-bg-url: url(./assets/MoonStars.svg);
@@ -32,6 +32,7 @@
     background: var(--bg-url) no-repeat top;
     height: 100%;
     width: 100%;
+    
   }
   
   body * {
@@ -40,8 +41,7 @@
   }
   
   #container0 {
-    border: 4px solid var(--text-color);
-    width: 750px;
+    width: 850px;
     height: 200px;
     margin: auto;
     position: center;
@@ -50,7 +50,7 @@
   #container0 img {
     position: cover;
     height: 192px;
-    width: 742px;
+    width: 842px;
   }
   
   #switch {
@@ -70,6 +70,7 @@
     right: 0;
     z-index: 1;
     transform: translateY(-50%);
+    border: 1px solid black;
   }
   
   .dark #switch button {
@@ -91,20 +92,21 @@
     width: 145px;
     position: cover;
     justify-content: center;
+
   }
   
   #autor img {
     position: cover;
-    border: solid 4px var(--text-color);
     width: 145px;
     justify-content: center;
+    border-radius: 10%
   }
   
   #container1 {
     padding: 5px 15px;
-    border: 5px solid var(--text-color);
-    width: 500px;
+    width: 650px;
     margin: auto;
+    position: center;
   }
   
   a:link {
@@ -129,11 +131,12 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    
   }
   
   ul li {
     font-size: 30px;
-    background-color: aliceblue;
+    background-color: color var (--text-color);
   }
   
   ul li a {
@@ -146,14 +149,14 @@
     -webkit-backdrop-filter: blur(5px);
     text-decoration: none;
     font-weight: 500;
-    background-color: rgb(195, 25, 25);
+    background-color: none;
     font-style: var (--text-color);
+   
   
     transition: background 1.5s;
   }
   
   ul li a:hover {
-    border: 3px solid rgb(0, 0, 0);
     background: rgb(189, 63, 63);
     transition: 0.2s;
   }
@@ -163,7 +166,7 @@
     display: flex;
     justify-content: center;
     padding: 24px 0;
-    font-size: 80px;
+    font-size: 45px;
   }
   
   #social-links a {
