@@ -6,7 +6,7 @@
   
   :root {
     --text-color: black;
-    --bg-url: url(./assets/LibraryL.png);
+    --bg-url: url(./assets/BackgroundLibraryL.png);
     --stroke-color: black;
   
     --switch-bg-url: url(./assets/Sun.svg);
@@ -14,8 +14,9 @@
   
   .dark {
     --text-color: white;
-    --bg-url: url(./assets/LibraryD.png);
+    --bg-url: url(./assets/BackgroundLibraryD.png);
     --stroke-color: white;
+    
   
     --switch-bg-url: url(./assets/MoonStars.svg);
   }
@@ -30,11 +31,9 @@
   
     /*background: image  repeat position/size */
     background: var(--bg-url) no-repeat top;
+    
     height: 100%;
     width: 100%;
-    min-width: 850px;
-    min-height: 355px;
-    
   }
   
   body * {
@@ -44,15 +43,18 @@
   
   #container0 {
     width: 850px;
-    height: 200px;
+    max-width: 2170px;
+    height: 50%;
     margin: auto;
     position: center;
   }
   
   #container0 img {
-    position: cover;
-    height: 192px;
-    width: 842px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: center;
+    
   }
   
   #switch {
@@ -73,12 +75,16 @@
     z-index: 1;
     transform: translateY(-50%);
     border: 1px solid black;
+    animation: slid-Dark 0.2s forwards;
   }
   
   .dark #switch button {
-    left: 0;
+    animation: slid-Light 0.2s;
   }
   
+  #switch button:hover {
+    outline: 3px solid rgb(224, 224, 224);
+  }
   #switch span {
     display: block;
     width: 64px;
@@ -94,14 +100,13 @@
     width: 145px;
     position: cover;
     justify-content: center;
-
   }
   
   #autor img {
     position: cover;
     width: 145px;
     justify-content: center;
-    border-radius: 10%
+    border-radius: 10%; 
   }
   
   #container1 {
@@ -151,7 +156,7 @@
     -webkit-backdrop-filter: blur(5px);
     text-decoration: none;
     font-weight: 500;
-    background-color: none;
+    background-color:  rgb(196, 196, 196);
     font-style: var (--text-color);
    
   
@@ -167,8 +172,14 @@
   #social-links {
     display: flex;
     justify-content: center;
-    padding: 24px 0;
+    
     font-size: 45px;
+    height: 70px;
+    background-color: rgb(196, 196, 196);
+
+    margin-left: 160px;
+    width: 50%;
+    border: solid 4px black;
   }
   
   #social-links a {
@@ -184,3 +195,29 @@
     background: rgb(245, 52, 52);
   }
   
+  @media (min-width: 320px){
+    :root {
+      --bg-url: url(./assets/BackgroundLibraryL.png);
+    } 
+    .dark {
+      --bg-url: url(./assets/BackgroundLibraryD.png);
+    }
+  }
+
+  @keyframes  slid-Dark {
+    from {
+      right: 0;
+    }
+    to {
+      right:50%;
+    }
+  }
+
+  @keyframes slid-Light {
+    from {
+      right: 50%;
+    }
+    to {
+      right: 0;
+    }
+  }
