@@ -179,7 +179,7 @@
 
     margin-left: 160px;
     width: 50%;
-    border: solid 4px black;
+    border: solid 4px var(--stroke-color);
   }
   
   #social-links a {
@@ -195,7 +195,7 @@
     background: rgb(245, 52, 52);
   }
   
-  @media (min-width: 320px){
+  @media (min-width: px){
     :root {
       --bg-url: url(./assets/BackgroundLibraryL.png);
     } 
