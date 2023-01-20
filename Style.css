@@ -30,7 +30,7 @@
     */
   
     /*background: image  repeat position/size */
-    background: var(--bg-url) no-repeat top;
+    background: var(--bg-url) no-repeat center;
     
     height: 100%;
     width: 100%;
