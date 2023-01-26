@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+
     box-sizing: border-box;
   }
   
@@ -21,6 +22,14 @@
     --switch-bg-url: url(./assets/MoonStars.svg);
   }
   
+  .body-master {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
   body {
     /* background-color: brown;
     background-image: url(./assets/background-space.jpg);
@@ -34,6 +43,7 @@
     
     height: 100%;
     width: 100%;
+    
   }
   
   body * {
@@ -42,11 +52,12 @@
   }
   
   #container0 {
-    width: 850px;
-    max-width: 2170px;
+    width: 100%;
+    max-width: 690px;
     height: 50%;
     margin: auto;
     position: center;
+    
   }
   
   #container0 img {
@@ -109,10 +120,13 @@
     border-radius: 10%; 
   }
   
+ 
   #container1 {
     padding: 5px 15px;
-    width: 650px;
-    margin: auto;
+    width: 100%;
+    max-width: 690px;
+    height: 50%;
+    margin: 5px 4px;
     position: center;
   }
  
@@ -177,8 +191,9 @@
     height: 70px;
     background-color: rgb(196, 196, 196);
 
-    margin-left: 160px;
-    width: 50%;
+    max-width: 300px;
+    margin: auto;
+    
     border: solid 4px var(--stroke-color);
   }
   
@@ -196,7 +211,12 @@
     background: rgb(245, 52, 52);
   }
   
-  @media (min-width: px){
+  #profile a:hover {
+
+  }
+
+
+  @media (max-width: 400px){
     :root {
       --bg-url: url(./assets/BackgroundLibraryL.png);
     } 
